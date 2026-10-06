@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0a0e1a">
+<meta name="description" content="مدرسة لتعليم الإنجليزية من الصفر المطلق">
+<title>المدرسة | تعلم الإنجليزية من الصفر</title>
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎓%3C/text%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="styles/reset.css">
+<link rel="stylesheet" href="styles/variables.css">
+<link rel="stylesheet" href="styles/layout.css">
+<link rel="stylesheet" href="styles/screens.css">
+<link rel="stylesheet" href="styles/teacher.css">
+<link rel="stylesheet" href="styles/exercises.css">
+<link rel="stylesheet" href="styles/progress.css">
+<link rel="stylesheet" href="styles/animations.css">
+<link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+
+<div id="app" class="app-loading">
+
+  <div id="splash" class="screen screen-splash">
+    <div class="splash-content">
+      <div class="splash-icon">🎓</div>
+      <h1 class="splash-title">المدرسة</h1>
+      <p class="splash-subtitle">لتعلم الإنجليزية من الصفر المطلق</p>
+      <div class="splash-loader">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="welcome" class="screen screen-welcome hidden">
+    <div class="welcome-card">
+      <div class="welcome-icon">🎓</div>
+      <h1 class="welcome-title">المدرسة</h1>
+      <p class="welcome-subtitle">لتعلم الإنجليزية من الصفر المطلق</p>
+
+      <div class="welcome-description">
+        <p>لن تجد هنا قوائم دروس ولا اختبارات جافة.</p>
+        <p>ستجد <strong>معلماً</strong> يرافقك خطوة بخطوة.</p>
+        <p>يشرح لك، يسألك، يصبر عليك، ويصحح أخطاءك.</p>
+        <p>تبدأ من لا شيء، وتنتهي وأنت تقرأ وتفهم وتتحدث.</p>
+      </div>
+
+      <div class="welcome-info">
+        <div class="info-item">
+          <span class="info-icon">📚</span>
+          <span class="info-text">60 حصة</span>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">⏱️</span>
+          <span class="info-text">15 دقيقة للحصة</span>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">🌱</span>
+          <span class="info-text">من الصفر المطلق</span>
+        </div>
+      </div>
+
+      <button id="btn-enter" class="btn btn-primary btn-large">
+        ادخل المدرسة
+      </button>
+
+      <p class="welcome-footer">لا حساب. لا تسجيل. تقدمك محفوظ على جهازك.</p>
+    </div>
+  </div>
+
+  <div id="school" class="screen screen-school hidden">
+
+    <header class="school-header">
+      <div class="header-start">
+        <div class="school-logo">🎓</div>
+        <div class="school-meta">
+          <div class="school-name">المدرسة</div>
+          <div class="lesson-label" id="lesson-label">الحصة الأولى</div>
+        </div>
+      </div>
+
+      <div class="header-end">
+        <button id="btn-menu" class="icon-btn" aria-label="القائمة">☰</button>
+      </div>
+    </header>
+
+    <main id="stage" class="stage">
+      <div id="stage-content" class="stage-content"></div>
+    </main>
+
+    <footer class="school-footer">
+      <div class="progress-wrapper">
+        <div class="progress-info">
+          <span id="progress-label">0%</span>
+          <span id="progress-detail">0 / 60 حصة</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <div id="overlay" class="overlay hidden">
+    <div id="overlay-content" class="overlay-content"></div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+</div>
+
+<script src="core/storage.js"></script>
+<script src="core/state.js"></script>
+<script src="core/session.js"></script>
+<script src="core/srs.js"></script>
+<script src="core/pacing.js"></script>
+<script src="core/progress.js"></script>
+
+<script src="audio/english.js"></script>
+<script src="audio/arabic.js"></script>
+<script src="audio/player.js"></script>
+
+<script src="data/phonemes.js"></script>
+<script src="data/letters.js"></script>
+<script src="data/words.js"></script>
+<script src="data/sentences.js"></script>
+<script src="data/stories.js"></script>
+<script src="data/explanations.js"></script>
+
+<script src="teacher/persona.js"></script>
+<script src="teacher/reactions.js"></script>
+<script src="teacher/speech.js"></script>
+<script src="teacher/transitions.js"></script>
+
+<script src="ui/components.js"></script>
+<script src="ui/choices.js"></script>
+<script src="ui/feedback.js"></script>
+<script src="ui/modals.js"></script>
+<script src="ui/screens.js"></script>
+
+<script src="exercises/listen.js"></script>
+<script src="exercises/repeat.js"></script>
+<script src="exercises/recognize.js"></script>
+<script src="exercises/match.js"></script>
+<script src="exercises/blend.js"></script>
+<script src="exercises/read.js"></script>
+<script src="exercises/write.js"></script>
+<script src="exercises/sentence.js"></script>
+
+<script src="curriculum/template.js"></script>
+<script src="curriculum/index.js"></script>
+<script src="curriculum/semester-1/lesson-00.js"></script>
+
+<script src="app.js"></script>
+</body>
+</html>

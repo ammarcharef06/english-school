@@ -1,0 +1,294 @@
+.screen-splash {
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-content {
+  text-align: center;
+  animation: fadeIn 0.6s;
+}
+
+.splash-icon {
+  font-size: 5rem;
+  margin-bottom: var(--space-4);
+  animation: gentleFloat 2.5s ease-in-out infinite;
+}
+
+.splash-title {
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  color: var(--color-gold);
+  margin-bottom: var(--space-2);
+}
+
+.splash-subtitle {
+  color: var(--color-text-dim);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-6);
+}
+
+.splash-loader {
+  display: flex;
+  gap: var(--space-2);
+  justify-content: center;
+}
+
+.loader-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  animation: dotPulse 1.2s infinite;
+}
+
+.loader-dot:nth-child(2) { animation-delay: 0.15s; }
+.loader-dot:nth-child(3) { animation-delay: 0.3s; }
+
+.screen-welcome {
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-5) var(--space-4);
+}
+
+.welcome-card {
+  max-width: 560px;
+  width: 100%;
+  background: linear-gradient(180deg, var(--color-surface) 0%, var(--color-surface-2) 100%);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-7) var(--space-5);
+  text-align: center;
+  box-shadow: var(--shadow-xl);
+  animation: cardRise 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.welcome-icon {
+  font-size: 5rem;
+  margin-bottom: var(--space-3);
+  filter: drop-shadow(0 0 32px rgba(240,180,41,0.4));
+  animation: gentleFloat 3s ease-in-out infinite;
+}
+
+.welcome-title {
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--color-gold), var(--color-primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: var(--space-2);
+}
+
+.welcome-subtitle {
+  color: var(--color-text-dim);
+  font-size: var(--text-base);
+  margin-bottom: var(--space-6);
+}
+
+.welcome-description {
+  text-align: right;
+  background: rgba(0,0,0,0.25);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  border-right: 3px solid var(--color-gold);
+  margin-bottom: var(--space-5);
+}
+
+.welcome-description p {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+  line-height: 1.9;
+}
+
+.welcome-description p:last-child {
+  margin-bottom: 0;
+}
+
+.welcome-description strong {
+  color: var(--color-gold);
+}
+
+.welcome-info {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-5);
+  margin-bottom: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.info-icon {
+  font-size: var(--text-2xl);
+}
+
+.info-text {
+  font-size: var(--text-xs);
+  color: var(--color-text-dim);
+  font-weight: 600;
+}
+
+.welcome-footer {
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+  margin-top: var(--space-5);
+}
+
+.screen-school {
+  background: var(--color-bg);
+}
+
+.school-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  background: linear-gradient(180deg, var(--color-surface-2) 0%, var(--color-surface) 100%);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  box-shadow: var(--shadow-md);
+}
+
+.header-start {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.school-logo {
+  font-size: var(--text-2xl);
+}
+
+.school-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.school-name {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-gold);
+}
+
+.lesson-label {
+  font-size: var(--text-xs);
+  color: var(--color-text-dim);
+}
+
+.header-end {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-size: var(--text-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.icon-btn:hover {
+  background: var(--color-surface-2);
+  border-color: var(--color-primary);
+}
+
+.icon-btn:active {
+  transform: scale(0.94);
+}
+
+.school-footer {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+.progress-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+  color: var(--color-text-dim);
+}
+
+.progress-bar {
+  height: 6px;
+  background: var(--color-surface-3);
+  border-radius: var(--radius-round);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  transition: width var(--transition-bounce);
+  box-shadow: var(--shadow-glow-primary);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  z-index: var(--z-overlay);
+  animation: fadeIn 0.25s;
+}
+
+.overlay-content {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  max-width: 440px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  animation: cardRise 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(120%);
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-5);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  z-index: var(--z-toast);
+  transition: transform var(--transition-bounce);
+  box-shadow: var(--shadow-lg);
+}
+
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+}

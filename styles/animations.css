@@ -1,0 +1,118 @@
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes cardRise {
+  from { opacity: 0; transform: translateY(30px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes cardAppear {
+  from { opacity: 0; transform: scale(0.94); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes dotPulse {
+  0%, 100% { transform: scale(0.8); opacity: 0.5; }
+  50% { transform: scale(1.2); opacity: 1; }
+}
+
+@keyframes slideFromRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideFromLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pictureZoom {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes wordGlow {
+  from {
+    text-shadow: 0 0 60px rgba(88,166,255,0.9);
+    letter-spacing: 0.5rem;
+  }
+  to {
+    text-shadow: 0 0 32px rgba(88,166,255,0.5);
+    letter-spacing: 0.2rem;
+  }
+}
+
+@keyframes bannerPop {
+  0% { opacity: 0; transform: scale(0.85); }
+  60% { transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes audioPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(240,180,41,0.7), 0 8px 24px rgba(240,180,41,0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba(240,180,41,0), 0 8px 24px rgba(240,180,41,0.4);
+  }
+}
+
+@keyframes teacherThink {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.04) rotate(-3deg); }
+  75% { transform: scale(1.04) rotate(3deg); }
+}
+
+@keyframes teacherHappy {
+  0%, 100% { transform: scale(1) rotate(0); }
+  30% { transform: scale(1.15) rotate(-8deg); }
+  60% { transform: scale(1.15) rotate(8deg); }
+}
+
+@keyframes completionPop {
+  0% { opacity: 0; transform: scale(0.7) rotate(-3deg); }
+  60% { transform: scale(1.03) rotate(1deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
+
+@keyframes starFly {
+  0% { transform: scale(0) rotate(-45deg); opacity: 0; }
+  60% { transform: scale(1.2) rotate(10deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 0; }
+}
+
+.shake {
+  animation: shake 0.4s;
+}
+
+.star-fly {
+  position: fixed;
+  font-size: 2rem;
+  pointer-events: none;
+  z-index: var(--z-celebration);
+  animation: starFly 1.4s ease-out forwards;
+}
+
+@keyframes pulseSoft {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(240,180,41,0.5); }
+  50% { box-shadow: 0 0 0 8px rgba(240,180,41,0); }
+}
+
+.pulse-soft {
+  animation: pulseSoft 1.5s infinite;
+}

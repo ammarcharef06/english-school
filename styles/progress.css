@@ -1,0 +1,86 @@
+.completion-card {
+  text-align: center;
+  padding: var(--space-7) var(--space-5);
+  background: linear-gradient(180deg, var(--color-surface-2), var(--color-surface));
+  border: 2px solid var(--color-gold);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 0 60px rgba(240,180,41,0.25);
+  animation: completionPop 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.completion-icon {
+  font-size: 4.5rem;
+  margin-bottom: var(--space-4);
+  animation: gentleFloat 2s ease-in-out infinite;
+}
+
+.completion-title {
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  color: var(--color-gold);
+  margin-bottom: var(--space-2);
+}
+
+.completion-subtitle {
+  color: var(--color-text-dim);
+  margin-bottom: var(--space-5);
+}
+
+.completion-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+  margin: var(--space-5) 0;
+}
+
+.stat-box {
+  padding: var(--space-4);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.stat-box-label {
+  font-size: var(--text-xs);
+  color: var(--color-text-dim);
+  margin-bottom: var(--space-2);
+}
+
+.stat-box-value {
+  font-size: var(--text-xl);
+  font-weight: 800;
+  color: var(--color-accent);
+}
+
+.lesson-intro {
+  text-align: center;
+  padding: var(--space-7) var(--space-4);
+  animation: cardAppear var(--transition-bounce);
+}
+
+.lesson-intro-badge {
+  display: inline-block;
+  padding: var(--space-1) var(--space-4);
+  background: linear-gradient(135deg, var(--color-gold), var(--color-gold-deep));
+  color: var(--color-bg);
+  border-radius: var(--radius-round);
+  font-size: var(--text-xs);
+  font-weight: 800;
+  margin-bottom: var(--space-4);
+  letter-spacing: 0.05rem;
+}
+
+.lesson-intro-title {
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+}
+
+.lesson-intro-goal {
+  color: var(--color-text-dim);
+  font-size: var(--text-sm);
+  max-width: 460px;
+  margin: 0 auto;
+  line-height: 1.9;
+}

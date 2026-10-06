@@ -1,0 +1,92 @@
+@media (max-width: 480px) {
+
+  :root {
+    --text-6xl: 3rem;
+    --text-5xl: 2.25rem;
+    --text-4xl: 1.875rem;
+    --text-3xl: 1.5rem;
+  }
+
+  .stage {
+    padding: var(--space-4) var(--space-3);
+  }
+
+  .stage-content {
+    gap: var(--space-4);
+  }
+
+  .welcome-card {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .welcome-icon,
+  .completion-icon {
+    font-size: 3.5rem;
+  }
+
+  .teacher-avatar {
+    width: 46px;
+    height: 46px;
+    font-size: var(--text-xl);
+  }
+
+  .teacher-speech {
+    padding: var(--space-3) var(--space-4);
+  }
+
+  .teacher-message {
+    font-size: var(--text-sm);
+  }
+
+  .student-area {
+    padding-right: 54px;
+  }
+
+  .listen-btn {
+    width: 76px;
+    height: 76px;
+    font-size: 2rem;
+  }
+
+  .slow-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .word-big {
+    font-size: var(--text-5xl);
+  }
+
+  .picture-display {
+    font-size: 5.5rem;
+  }
+
+  .choices-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .choice-btn.emoji-choice {
+    font-size: 2rem;
+    min-height: 80px;
+  }
+
+  .completion-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .phoneme-chip button {
+    width: 52px;
+    height: 52px;
+  }
+
+  .chalk-text {
+    font-size: var(--text-xl);
+  }
+}
+
+@media (max-width: 360px) {
+  .welcome-info {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+}
